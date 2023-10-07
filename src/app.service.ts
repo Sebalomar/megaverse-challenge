@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
-import { promisify } from 'util';
 
 @Injectable()
 export class AppService {
@@ -185,7 +184,6 @@ export class AppService {
               await this.delay(1000);
               break;
             default:
-              // Handle any other entity type if needed
               break;
           }
         }
